@@ -13,19 +13,7 @@ public class testbrush : MonoBehaviour
 	
 	public float Hardness = 1.0f;
 	
-//	protected virtual void Update()
-//	{
-//		if (Input.GetMouseButtonDown(0) == true && Camera.main != null)
-//		{
-//			var ray      = Camera.main.ScreenPointToRay(Input.mousePosition);
-//			var distance = D2D_Helper.Divide(ray.origin.z, ray.direction.z);
-//			var point    = ray.origin - ray.direction * distance;
-//			
-//			D2D_Destructible.StampAll(point, Size, Angle, StampTex, Hardness, Layers);
-//		}
-//	}
-
-	void Update ()
+	protected virtual void Update()
 	{
 		if (Input.GetMouseButton(0))
 		{
@@ -36,5 +24,18 @@ public class testbrush : MonoBehaviour
 			D2D_Destructible.StampAll(point, Size, Angle, StampTex, Hardness, Layers);
 		}
 	}
+
+//	void Update ()
+//	{
+//		var ray      = Camera.main.ScreenPointToRay(Input.mousePosition);
+//		var distance = D2D_Helper.Divide(ray.origin.z, ray.direction.z);
+//		var point    = ray.origin - ray.direction * distance;
+//		if (Input.GetMouseButton(0))
+//		{
+//
+//			
+//			D2D_Destructible.StampAll(point, Size, Angle, StampTex, Hardness, Layers);
+//		}
+//	}
 
 }
