@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Seconds: 1
+  FadeOut: 0
+  FadeSeconds: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,7 +57,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bbea72cf307518469cf0d6eb4291f0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Layers: {}
+  Layers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   StampTex: {fileID: 2800000, guid: bbf971521ed77e04485016f0535821cf, type: 3}
   Hardness: 1
   Size: {x: 1, y: 1}
@@ -68,12 +72,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 30cd04bd1fefc174b811f74241da78b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Layers: {}
+  Layers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   Radius: 2
   Force: 1000
   Samples: 32
@@ -308,7 +314,7 @@ ParticleSystem:
     m_Mesh: {fileID: 0}
     randomDirection: 0
   EmissionModule:
-    enabled: 1
+    enabled: 0
     m_Type: 0
     rate:
       scalar: 0
@@ -519,7 +525,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 1
   UVModule:
-    enabled: 1
+    enabled: 0
     frameOverTime:
       scalar: 1
       maxCurve:
@@ -1107,7 +1113,7 @@ ParticleSystemRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255

@@ -10,7 +10,8 @@ public class D2D_DestroyAfterTime : MonoBehaviour
 	public float FadeSeconds = 1.0f;
 	
 	private SpriteRenderer spriteRenderer;
-	
+
+	/*
 	protected virtual void Update()
 	{
 		Seconds -= Time.deltaTime;
@@ -32,5 +33,16 @@ public class D2D_DestroyAfterTime : MonoBehaviour
 				spriteRenderer.color = color;
 			}
 		}
+	}*/
+
+	void OnEnable ()
+	{
+		Invoke ("Des", 0.1f);
+
+	}
+
+	void Des ()
+	{
+		Destroy(gameObject);
 	}
 }

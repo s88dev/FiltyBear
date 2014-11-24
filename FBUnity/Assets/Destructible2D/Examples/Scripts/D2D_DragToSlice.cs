@@ -17,7 +17,7 @@ public class D2D_DragToSlice : MonoBehaviour
 	
 	private Vector3 startMousePosition;
 
-	/*
+
 	protected virtual void Update()
 	{
 		if (Input.GetKey(Requires) == true && down == false)
@@ -60,8 +60,9 @@ public class D2D_DragToSlice : MonoBehaviour
 				Indicator.transform.localScale    = new Vector3(Thickness, scale, scale);
 			}
 		}
-	}*/
+	}
 
+	/*
 	protected virtual void Update ()
 	{
 		if (Input.GetMouseButton (0))
@@ -69,5 +70,5 @@ public class D2D_DragToSlice : MonoBehaviour
 			var mousePos = Camera.main.ScreenToWorldPoint (Input.mousePosition);
 			D2D_Destructible.SliceAll (mousePos, mousePos + Vector3.one, Thickness, StampTex, Hardness);
 		}
-	}
+	}*/
 }
