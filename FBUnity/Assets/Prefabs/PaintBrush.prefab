@@ -59,7 +59,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   StampTex: {fileID: 2800000, guid: 2bb9d70eef531d64490f4cc51f8eaef9, type: 3}
   Hardness: 1
-  Size: {x: .600000024, y: .600000024}
+  Size: {x: .5, y: .5}
   AngleOffset: 0
   AngleRandomness: 360
   HasExploded: 0
