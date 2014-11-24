@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 6f70a9e8aa5b14c568156ed86e580e33
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bear_body_mud2
+    21300002: bear_arm2_mud2
+    21300004: bear_arm1_mud2
+    21300006: bear_leg2_mud2
+    21300008: bear_leg1_mud2
+    21300010: bear_head_mud2
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -35,7 +41,7 @@ TextureImporter:
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -46,7 +52,67 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
-  spritePackingTag: 
+    sprites:
+    - name: bear_body_mud2
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 11
+        width: 987
+        height: 1197
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_arm2_mud2
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 60
+        width: 547
+        height: 660
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_arm1_mud2
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 776
+        width: 534
+        height: 660
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_leg2_mud2
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1359
+        width: 331
+        height: 557
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_leg1_mud2
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 1371
+        width: 354
+        height: 548
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_head_mud2
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1433
+        width: 656
+        height: 589
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: mud
   userData: 
   assetBundleName: 
