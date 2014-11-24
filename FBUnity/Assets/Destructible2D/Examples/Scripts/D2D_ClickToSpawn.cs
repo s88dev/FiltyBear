@@ -4,7 +4,8 @@ using UnityEngine;
 public class D2D_ClickToSpawn : MonoBehaviour
 {
 	public GameObject Prefab;
-	
+	public StartGame checkGame;
+
 	public KeyCode Requires = KeyCode.Mouse0;
 
 	/*
@@ -22,7 +23,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 
 	void Update ()
 	{
-		if (Input.GetMouseButton (0))
+		if (Input.GetMouseButton (0) && checkGame.gameStarted == true)
 		{
 			var ray      = Camera.main.ScreenPointToRay (Input.mousePosition);
 			var distance = D2D_Helper.Divide (ray.origin.z, ray.direction.z);
