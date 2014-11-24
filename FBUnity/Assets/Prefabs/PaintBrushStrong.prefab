@@ -56,10 +56,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Layers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1792
   StampTex: {fileID: 2800000, guid: 2bb9d70eef531d64490f4cc51f8eaef9, type: 3}
   Hardness: 1
-  Size: {x: .427470028, y: .427470028}
+  Size: {x: .834227979, y: .834227979}
   AngleOffset: 0
   AngleRandomness: 360
   HasExploded: 0
