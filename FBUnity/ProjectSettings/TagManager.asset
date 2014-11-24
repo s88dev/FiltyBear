@@ -56,3 +56,15 @@ TagManager:
   - name: UI
     uniqueID: 1385621063
     locked: 0
+  - name: Legs
+    uniqueID: 3438115311
+    locked: 0
+  - name: Arms
+    uniqueID: 2213536235
+    locked: 0
+  - name: Body
+    uniqueID: 1026939053
+    locked: 0
+  - name: Head
+    uniqueID: 2641784979
+    locked: 0
