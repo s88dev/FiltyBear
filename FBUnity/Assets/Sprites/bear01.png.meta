@@ -1,0 +1,118 @@
+fileFormatVersion: 2
+guid: 37f3008db9ae4443da2e1774863bd3b9
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: bear_head
+    21300002: bear_leg1
+    21300004: bear_leg2
+    21300006: bear_arm1
+    21300008: bear_body
+    21300010: bear_arm2
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: bear_head
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 1467
+        width: 629
+        height: 554
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_leg1
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1342
+        width: 336
+        height: 565
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_leg2
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 1343
+        width: 336
+        height: 565
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_arm1
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 740
+        width: 538
+        height: 682
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_body
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 20
+        width: 944
+        height: 1162
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_arm2
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 19
+        width: 538
+        height: 682
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
