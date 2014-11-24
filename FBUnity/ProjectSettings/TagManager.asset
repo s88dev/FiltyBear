@@ -44,6 +44,15 @@ TagManager:
   - name: Bear
     uniqueID: 755657993
     locked: 0
+  - name: DirtLevel1
+    uniqueID: 192019005
+    locked: 0
+  - name: DirtLevel2
+    uniqueID: 3641373171
+    locked: 0
+  - name: DirtLevel3
+    uniqueID: 2965662667
+    locked: 0
   - name: UI
     uniqueID: 1385621063
     locked: 0
