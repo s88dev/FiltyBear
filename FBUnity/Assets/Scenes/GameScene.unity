@@ -864,7 +864,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2038941960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 10}
+  m_LocalPosition: {x: 0, y: 4.69999981, z: 10}
   m_LocalScale: {x: .538516283, y: .538516164, z: .538516164}
   m_Children:
   - {fileID: 2130878026}
@@ -879,6 +879,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2130878026}
   - 212: {fileID: 2130878027}
+  - 111: {fileID: 2130878028}
   m_Layer: 0
   m_Name: bear_body
   m_TagString: Untagged
@@ -893,7 +894,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2130878025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -8.67000008, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 665915949}
@@ -932,3 +933,18 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300008, guid: 37f3008db9ae4443da2e1774863bd3b9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!111 &2130878028
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2130878025}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6d0880eaa259d458ab539c5626ec0252, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 6d0880eaa259d458ab539c5626ec0252, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
