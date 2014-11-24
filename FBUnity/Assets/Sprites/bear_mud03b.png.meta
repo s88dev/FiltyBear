@@ -1,7 +1,13 @@
 fileFormatVersion: 2
 guid: 97413d14b72064867ae478c075b7ff43
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: bear_mud03b_0
+    21300002: bear_mud03b_1
+    21300004: bear_mud03b_2
+    21300006: bear_mud03b_3
+    21300008: bear_mud03b_4
+    21300010: bear_mud03b_5
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -46,7 +52,67 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: bear_mud03b_0
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 11
+        width: 884
+        height: 1344
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_mud03b_1
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 205
+        width: 390
+        height: 760
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_mud03b_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 515
+        width: 382
+        height: 776
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_mud03b_3
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1357
+        width: 562
+        height: 656
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_mud03b_4
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 1459
+        width: 388
+        height: 472
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: bear_mud03b_5
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 1469
+        width: 378
+        height: 460
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 
