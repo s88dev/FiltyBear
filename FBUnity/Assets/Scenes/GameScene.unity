@@ -296,10 +296,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 35773926}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.98000002, y: -5.57999992, z: 0}
+  m_LocalPosition: {x: -2.98000002, y: -14.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2130878026}
+  m_Father: {fileID: 2038941961}
   m_RootOrder: 4
 --- !u!1 &137632838
 GameObject:
@@ -479,10 +479,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 394628983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.13999987, y: 2.07999992, z: 0}
+  m_LocalPosition: {x: 4.13999987, y: -6.59000015, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2130878026}
+  m_Father: {fileID: 2038941961}
   m_RootOrder: 1
 --- !u!212 &394628985
 SpriteRenderer:
@@ -536,10 +536,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 665915948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0299999993, y: 4.98000002, z: 0}
+  m_LocalPosition: {x: -.0299999993, y: -3.54999995, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2130878026}
+  m_Father: {fileID: 2038941961}
   m_RootOrder: 0
 --- !u!212 &665915950
 SpriteRenderer:
@@ -672,10 +672,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343083511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.94000006, y: -5.63000011, z: 0}
+  m_LocalPosition: {x: 2.94000006, y: -14.3000002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2130878026}
+  m_Father: {fileID: 2038941961}
   m_RootOrder: 3
 --- !u!212 &1343083513
 SpriteRenderer:
@@ -808,10 +808,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1933620010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.19999981, y: 1.77999997, z: 0}
+  m_LocalPosition: {x: -4.19999981, y: -6.89000034, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2130878026}
+  m_Father: {fileID: 2038941961}
   m_RootOrder: 2
 --- !u!212 &1933620012
 SpriteRenderer:
@@ -850,6 +850,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2038941961}
+  - 111: {fileID: 2038941962}
   m_Layer: 0
   m_Name: Bear
   m_TagString: Untagged
@@ -867,9 +868,29 @@ Transform:
   m_LocalPosition: {x: 0, y: 4.69999981, z: 10}
   m_LocalScale: {x: .538516283, y: .538516164, z: .538516164}
   m_Children:
+  - {fileID: 665915949}
+  - {fileID: 394628984}
+  - {fileID: 1933620011}
+  - {fileID: 1343083512}
+  - {fileID: 35773928}
   - {fileID: 2130878026}
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!111 &2038941962
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038941960}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 981d6d8aeaf8e48b9b8fbf9d0a8699a3, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 981d6d8aeaf8e48b9b8fbf9d0a8699a3, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2130878025
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,15 +916,10 @@ Transform:
   m_GameObject: {fileID: 2130878025}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -8.67000008, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 665915949}
-  - {fileID: 394628984}
-  - {fileID: 1933620011}
-  - {fileID: 1343083512}
-  - {fileID: 35773928}
+  m_LocalScale: {x: 1.00999999, y: 1.00999999, z: 1.00999999}
+  m_Children: []
   m_Father: {fileID: 2038941961}
-  m_RootOrder: 0
+  m_RootOrder: 5
 --- !u!212 &2130878027
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -941,9 +957,9 @@ Animation:
   m_GameObject: {fileID: 2130878025}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 6d0880eaa259d458ab539c5626ec0252, type: 2}
+  m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: 6d0880eaa259d458ab539c5626ec0252, type: 2}
+  - {fileID: 0}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
