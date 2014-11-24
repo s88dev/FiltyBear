@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 4116a201a433c46e28f3eb63bd4e3df9
+=======
+guid: 543cd88386369425780796fcc6fe28a6
+>>>>>>> Stashed changes
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2

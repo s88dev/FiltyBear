@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: 81290c20301fe4d3abbd9ec9345bdf83
+=======
+guid: 9990cd545ac5e4e2eaec93c655764162
+>>>>>>> Stashed changes
 folderAsset: yes
 PluginImporter:
   serializedVersion: 1

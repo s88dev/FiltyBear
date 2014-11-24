@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: dd9f742778613472d903e8def1b749e0
+=======
+guid: fb1b4bb985dbf41bfb4783b60170b712
+>>>>>>> Stashed changes
 PluginImporter:
   serializedVersion: 1
   iconMap: {}
