@@ -8,11 +8,13 @@ TextureImporter:
     21300006: bear_head_mud00
     21300008: bear_head_mud00
     21300010: bear_head_mud00
-    21300012: bear_arm1_mud00
-    21300014: bear_arm2_mud00
+    21300012: bear_leg3_mud00
+    21300014: bear_arm223_mud00
     21300016: bear_leg1_mud00
     21300018: bear_leg2_mud00
     21300020: bear_body_mud00
+    21300022: bear_arm1_mud00
+    21300024: bear_arm2_mud00
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -68,7 +70,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bear_arm1_mud00
+    - name: bear_leg1_mud00
       rect:
         serializedVersion: 2
         x: 849
@@ -78,7 +80,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bear_arm2_mud00
+    - name: bear_leg2_mud00
       rect:
         serializedVersion: 2
         x: 1444
@@ -88,7 +90,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bear_leg1_mud00
+    - name: bear_arm1_mud00
       rect:
         serializedVersion: 2
         x: 148
@@ -98,7 +100,7 @@ TextureImporter:
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: bear_leg2_mud00
+    - name: bear_arm2_mud00
       rect:
         serializedVersion: 2
         x: 406
