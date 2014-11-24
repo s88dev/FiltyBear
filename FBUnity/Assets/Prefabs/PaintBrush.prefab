@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 400000}
   - 114: {fileID: 11400000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400004}
   m_Layer: 0
   m_Name: PaintBrush
   m_TagString: Untagged
@@ -57,30 +56,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Layers:
     serializedVersion: 2
-    m_Bits: 4294967295
-  StampTex: {fileID: 2800000, guid: bbf971521ed77e04485016f0535821cf, type: 3}
+    m_Bits: 0
+  StampTex: {fileID: 2800000, guid: 2bb9d70eef531d64490f4cc51f8eaef9, type: 3}
   Hardness: 1
-  Size: {x: 1, y: 1}
+  Size: {x: .60970062, y: .60970062}
   AngleOffset: 0
   AngleRandomness: 360
-  HasExploded: 0
---- !u!114 &11400004
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30cd04bd1fefc174b811f74241da78b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Layers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  Radius: 2
-  Force: 1000
-  Samples: 32
   HasExploded: 0
 --- !u!1001 &100100000
 Prefab:
