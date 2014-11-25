@@ -16,6 +16,8 @@ public class BrushSelector : MonoBehaviour
 	public GameObject bearPrefab;
 	// The possible background colors
 	public Color [] backgroundColors;
+	//
+	public Sprite [] underwearSprites;
 	// The renderer for the baskground
 	public Renderer backgroundRend;
 	// The position at which we spawn the bear
@@ -24,6 +26,10 @@ public class BrushSelector : MonoBehaviour
 	private int _currentBrushSize = 1;
 	// The current Bear Object
 	private bool _isInitialBear = true;
+	// The index of the current background color
+	private int _currentBackgroundIndex = 0;
+	// The sprite renderer for the underwear
+	private SpriteRenderer underwearRend;
 
 	#endregion
 
@@ -37,8 +43,7 @@ public class BrushSelector : MonoBehaviour
 	}
 
 
-	//
-	//
+	// Changes the brush size
 	public void BrushSizeChanged ()
 	{
 		switch (_currentBrushSize)
@@ -50,33 +55,48 @@ public class BrushSelector : MonoBehaviour
 	}
 
 
-	//
-	//
+	// Resets the bear & background color
 	public void ResetButtonPressed ()
 	{
-		//
+		// Destroy the bear currently on screen
 		if (_isInitialBear)
 			Destroy (GameObject.Find ("Bear"));
 		else
 			Destroy (GameObject.Find ("Bear(Clone)"));
 
-		//
-		Instantiate (bearPrefab, _prefabSpawnPosition, Quaternion.identity);
+		// Instantiate the new bear and set the background color
+		GameObject b = (GameObject) Instantiate (bearPrefab, _prefabSpawnPosition, Quaternion.identity);
+		underwearRend = b.GetComponent <SpriteRenderer> ();
 
 		//
 		_isInitialBear = false;
 		ChangeBackgroundColor ();
+		ChangeUnderwear ();
 	}
 
 	#endregion
 
 
-	//
+	// Changes the background color
 	void ChangeBackgroundColor ()
 	{
-		// Get a random color
-		Color col = backgroundColors [Random.Range (0, backgroundColors.Length)];
+		// Get the next background color
+		_currentBackgroundIndex ++;
+		if (_currentBackgroundIndex > (backgroundColors.Length - 1))
+			_currentBackgroundIndex = 0;
+
+		// Set the color
+		Color col = backgroundColors [_currentBackgroundIndex];
 		backgroundRend.material.color = col;
+	}
+
+
+	//
+	void ChangeUnderwear ()
+	{
+		//
+		Sprite s = underwearSprites [Random.Range (0, underwearSprites.Length)];
+		underwearRend.sprite = s;
 	}
 
 
