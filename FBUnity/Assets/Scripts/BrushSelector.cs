@@ -37,5 +37,21 @@ public class BrushSelector : MonoBehaviour
 		}
 	}
 
+
+	//
+	//
+	public void ResetButtonPressed ()
+	{
+
+	}
+
+
+	//
+	//
+	public void CycleBackgroundButtonPressed ()
+	{
+		
+	}
+
 	#endregion
 }
