@@ -21,7 +21,7 @@ public class BrushSelector : MonoBehaviour
 	// The position at which we spawn the bear
 	private Vector3 _prefabSpawnPosition;
 	// The current brush size
-	private int _currentBrushSize;
+	private int _currentBrushSize = 1;
 	// The current Bear Object
 	private bool _isInitialBear = true;
 
