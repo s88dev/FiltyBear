@@ -12,7 +12,6 @@ public class BrushSelector : MonoBehaviour
 
 	// The pain brush we are affecting
 	public D2D_ExplosionStamp brush;
-	public Slider sizeSlider;
 
 	#endregion
 
@@ -28,21 +27,14 @@ public class BrushSelector : MonoBehaviour
 
 	//
 	//
-	public void BrushSizeChanged ()
+	public void BrushSizeChanged (int size)
 	{
-		float f = sizeSlider.value;
-		brush.Size = new Vector2 (f, f);
-	}
-
-	#endregion
-	
-
-	#region Initialization
-
-	// Used for initialization
-	void Start () 
-	{
-		
+		switch (size)
+		{
+			case 1: brush.Size = new Vector2 (0.25f, 0.25f); break;
+			case 2: brush.Size = new Vector2 (0.5f, 0.5f); break;
+			case 3: brush.Size = new Vector2 (1f, 1f); break;
+		}
 	}
 
 	#endregion
