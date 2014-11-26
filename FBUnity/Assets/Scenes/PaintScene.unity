@@ -2263,6 +2263,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4ef26b454bb8849c2b0cf0b21fb69ed2, type: 3}
   - {fileID: 21300000, guid: d154a68bbe6da4b019701998c984841b, type: 3}
   - {fileID: 21300000, guid: a4a700f4c22aa4f829e5094a5f911525, type: 3}
+  braSprites:
+  - {fileID: 21300000, guid: 00219b7f2572047c6b438cae6bd220db, type: 3}
+  - {fileID: 21300000, guid: 4bd47fb404be541b697da6f5424e0ef7, type: 3}
+  - {fileID: 21300000, guid: 8fc272ad1fce74d31b52c2b8e980e0be, type: 3}
+  - {fileID: 21300000, guid: b049042b8460c464181ff162f2c3a00b, type: 3}
+  - {fileID: 21300000, guid: cb9ba89b843b64e588fdf85604390114, type: 3}
   backgroundRend: {fileID: 659117160}
   spawner: {fileID: 500152609}
   faceSpriteNormal: {fileID: 21300000, guid: 033ec17713b184a448de262d45bda6a5, type: 3}
@@ -2303,6 +2309,7 @@ MonoBehaviour:
   resetButtonclip: {fileID: 8300000, guid: 5f1a8b4865be44c0da649d066fc6f5b6, type: 3}
   switchOutfitsButtonclip: {fileID: 8300000, guid: d06d6d98916c4427ca2e157c76ba0f00,
     type: 3}
+  bearGaspClip: {fileID: 8300000, guid: e13f1d9b58fca4162801d54feab0eb57, type: 3}
 --- !u!1 &1552999710
 GameObject:
   m_ObjectHideFlags: 0

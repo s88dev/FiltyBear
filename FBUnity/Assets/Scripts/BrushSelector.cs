@@ -56,6 +56,8 @@ public class BrushSelector : MonoBehaviour
 	//
 	private BearOutfitController outfit = null;
 	private int _currentOutfit = 1;
+	//
+	AudioController audioCont;
 
 	#endregion
 
@@ -192,6 +194,7 @@ public class BrushSelector : MonoBehaviour
 		//Invoke ("Unblink", 1.3f);
 
 		//
+	//	audioCont.PlaySound ("Gasp");
 		buttHasBeenTouched = true;
 	}
 
@@ -205,10 +208,10 @@ public class BrushSelector : MonoBehaviour
 		{
 			//
 			for (int i = 0; i < brushSizeIndicators.Length; i ++)
-				brushSizeIndicators [i].color = Color.Lerp (brushSizeIndicators [i].color, Color.clear, Time.deltaTime * 3.0f);
-			smallBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 3.0f);
-			mediumBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 3.0f);
-			largeBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 3.0f);
+				brushSizeIndicators [i].color = Color.Lerp (brushSizeIndicators [i].color, Color.clear, Time.deltaTime * 5.0f);
+			smallBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 5.0f);
+			mediumBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 5.0f);
+			largeBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 5.0f);
 		}
 	}
 
@@ -316,6 +319,7 @@ public class BrushSelector : MonoBehaviour
 	//
 	void Start ()
 	{
+		audioCont = GetComponent <AudioController> ();
 		_prefabSpawnPosition = GameObject.Find ("Bear").transform.position;
 		faceRend = GameObject.Find ("Bear").transform.GetChild (1).GetChild (1).gameObject.GetComponent <SpriteRenderer> ();
 		outfit = GameObject.Find ("Bear").GetComponent <BearOutfitController> ();

@@ -108,7 +108,7 @@ GameObject:
   - 4: {fileID: 418928}
   - 212: {fileID: 21248526}
   m_Layer: 5
-  m_Name: Underwear
+  m_Name: Bra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -192,6 +192,22 @@ GameObject:
   - 114: {fileID: 11429420}
   m_Layer: 8
   m_Name: PaintSurface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &167578
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 411014}
+  - 212: {fileID: 21283846}
+  m_Layer: 5
+  m_Name: Underwear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,6 +407,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!4 &411014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167578}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: .0160000008, y: -5.1329999, z: .189999998}
+  m_LocalScale: {x: .998129129, y: 1.00031424, z: 1.00031424}
+  m_Children: []
+  m_Father: {fileID: 481030}
+  m_RootOrder: 1
 --- !u!4 &412330
 Transform:
   m_ObjectHideFlags: 1
@@ -460,11 +488,11 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0160000008, y: -5.1329999, z: .189999998}
+  m_LocalPosition: {x: .0199999996, y: 2.27999997, z: .189999998}
   m_LocalScale: {x: .998129129, y: 1.00031424, z: 1.00031424}
   m_Children: []
   m_Father: {fileID: 481030}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &421630
 Transform:
   m_ObjectHideFlags: 1
@@ -494,7 +522,7 @@ Transform:
   m_LocalScale: {x: .977304339, y: .979443848, z: .979443848}
   m_Children: []
   m_Father: {fileID: 481030}
-  m_RootOrder: 3
+  m_RootOrder: 4
 --- !u!4 &432240
 Transform:
   m_ObjectHideFlags: 1
@@ -543,7 +571,7 @@ Transform:
   m_LocalScale: {x: .955782115, y: .957874596, z: .957874596}
   m_Children: []
   m_Father: {fileID: 481030}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!4 &450722
 Transform:
   m_ObjectHideFlags: 1
@@ -612,6 +640,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 483928}
+  - {fileID: 411014}
   - {fileID: 418928}
   - {fileID: 447588}
   - {fileID: 426494}
@@ -636,8 +665,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 153890}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0799999982, y: -.280000001, z: 0}
-  m_LocalScale: {x: .980000019, y: .979999959, z: .979999959}
+  m_LocalPosition: {x: -.0299999993, y: .100000001, z: 0}
+  m_LocalScale: {x: .955499947, y: 1.04125047, z: .979999959}
   m_Children: []
   m_Father: {fileID: 481030}
   m_RootOrder: 0
@@ -1151,7 +1180,7 @@ SpriteRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 134526}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_LightmapIndex: 255
@@ -1172,7 +1201,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1026939053
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 58a7b1ba2b06d4e76beb37af188a97e1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b049042b8460c464181ff162f2c3a00b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21259346
 SpriteRenderer:
@@ -1492,6 +1521,35 @@ SpriteRenderer:
   m_SortingLayerID: -856851985
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300004, guid: cb33f57c069ce44e69dc473f3b49859a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21283846
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167578}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapIndexDynamic: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_LightmapTilingOffsetDynamic: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_AutoUVMaxDistance: .5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 1026939053
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: 7a0bae62aef704c629fe2f87f42d4500, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!212 &21284010
 SpriteRenderer:

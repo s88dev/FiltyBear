@@ -10,6 +10,7 @@ public class AudioController : MonoBehaviour
 	//
 	public AudioClip resetButtonclip;
 	public AudioClip switchOutfitsButtonclip;
+	public AudioClip bearGaspClip;
 
 	#endregion
 
@@ -23,11 +24,13 @@ public class AudioController : MonoBehaviour
 	public void PlaySound (string name)
 	{
 		seSource.Stop ();
+		seSource.volume = 1.0f;
 		switch (name)
 		{
 			case "Reset": seSource.clip = resetButtonclip; break;
 			case "Switch": seSource.clip = switchOutfitsButtonclip; break;
 			case "Brush": seSource.clip = resetButtonclip; break;
+			case "Gasp": seSource.clip = bearGaspClip; seSource.volume = 0.6f; break;
 		}
 		seSource.Play ();
 	}
