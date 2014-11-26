@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b8583e9907ac04a6da850a2f49d279da
+guid: fcbebdea1e6cc44a8841cfcb0bdc1a10
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -25,7 +25,7 @@ TextureImporter:
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
   textureFormat: -1
-  maxTextureSize: 256
+  maxTextureSize: 128
   textureSettings:
     filterMode: -1
     aniso: -1
@@ -47,6 +47,6 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
-  spritePackingTag: bear
+  spritePackingTag: 
   userData: 
   assetBundleName: 

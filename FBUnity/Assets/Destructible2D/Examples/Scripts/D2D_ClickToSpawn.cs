@@ -81,20 +81,18 @@ public class D2D_ClickToSpawn : MonoBehaviour
 				//
 				if (Vector3.Distance (_previousPoint, point) >= 0.12f)
 				{
-					Vector3 [] midpoint = new Vector3 [3];
+					Vector3 [] midpoint = new Vector3 [2];
 					midpoint [0] = ((point + _previousPoint) / 2);
-					midpoint [1] = ((midpoint [0] + _previousPoint) / 2);
-					midpoint [2] = ((point + midpoint [0]) / 2);
+					midpoint [1] = ((point + midpoint [0]) / 2);
 
 					//
 					prefabs [0].Explode (midpoint [0]);
-					//prefabs [1].Explode (midpoint [1]);
-					prefabs [2].Explode (midpoint [2]);
+					prefabs [1].Explode (midpoint [1]);
 				}
 			}
 
 			//
-			prefabs [3].Explode (point);
+			prefabs [2].Explode (point);
 			_previousPoint = point;
 
 			//
@@ -117,7 +115,6 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			smallCursor.GetComponent <Image> ().enabled = false;
 			mediumCursor.GetComponent <Image> ().enabled = false;
 			largeCursor.GetComponent <Image> ().enabled = false;
-			//controller.ResetTouchedBools ();
 			controller.ButtUntouched ();
 			controller.FaceUntouched ();
 			rubSource.volume = 0.0f;
