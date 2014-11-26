@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 [AddComponentMenu(D2D_Helper.ComponentMenuPrefix + "Click To Spawn")]
 public class D2D_ClickToSpawn : MonoBehaviour
@@ -8,6 +9,10 @@ public class D2D_ClickToSpawn : MonoBehaviour
 	D2D_ExplosionStamp [] prefabs;
 	public KeyCode Requires = KeyCode.Mouse0;
 	private Vector3 _previousPoint = Vector3.zero;
+	public Transform smallCursor;
+	public Transform mediumCursor;
+	public Transform largeCursor;
+	private int sizeBrushNum = 1;
 
 
 	/*
@@ -25,20 +30,37 @@ public class D2D_ClickToSpawn : MonoBehaviour
 
 
 	//
-	public void ChangeBrushSize (float size)
+	public void ChangeBrushSize (float size, int sizeNum)
 	{
 		for (int i = 0; i < prefabs.Length; i++)
 			prefabs [i].Size = new Vector2 (size, size);
+
+
+		sizeBrushNum = sizeNum;
 	}
 
 	//
 	void Update ()
 	{
+		//
+		if (Input.GetMouseButtonDown (0))
+		{
+			switch (sizeBrushNum)
+			{
+				case 1: smallCursor.GetComponent <Image> ().enabled = true; break;
+				case 2: mediumCursor.GetComponent <Image> ().enabled = true; break;
+				case 3: largeCursor.GetComponent <Image> ().enabled = true; break;
+			}
+		}
+
 		if (Input.GetMouseButton (0))
 		{
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			float distance = 0;
 			Vector3 point = ray.origin - ray.direction * distance;
+			smallCursor.position = point;
+			mediumCursor.position = point;
+			largeCursor.position = point;
 
 			//
 			if (_previousPoint != Vector3.zero)
@@ -67,6 +89,9 @@ public class D2D_ClickToSpawn : MonoBehaviour
 		if (Input.GetMouseButtonUp (0))
 		{
 			_previousPoint = Vector3.zero;
+			smallCursor.GetComponent <Image> ().enabled = false;
+			mediumCursor.GetComponent <Image> ().enabled = false;
+			largeCursor.GetComponent <Image> ().enabled = false;
 		}
 	}
 

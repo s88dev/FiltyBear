@@ -66,9 +66,9 @@ public class BrushSelector : MonoBehaviour
 	{
 		switch (_currentBrushSize)
 		{
-			case 1: _currentBrushSize = 2; spawner.ChangeBrushSize (0.5f); break;
-			case 2: _currentBrushSize = 3; spawner.ChangeBrushSize (1f); break;
-			case 3: _currentBrushSize = 1; spawner.ChangeBrushSize (0.25f); break;
+			case 1: _currentBrushSize = 2; spawner.ChangeBrushSize (0.5f, 2); break;
+			case 2: _currentBrushSize = 3; spawner.ChangeBrushSize (1f, 3); break;
+			case 3: _currentBrushSize = 1; spawner.ChangeBrushSize (0.25f, 1); break;
 		}
 
 		smallBrushActive.enabled = false;
