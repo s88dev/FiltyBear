@@ -664,6 +664,9 @@ MonoBehaviour:
   smallCursor: {fileID: 607652794}
   mediumCursor: {fileID: 2101646536}
   largeCursor: {fileID: 251906517}
+  faceReactionCenter: {fileID: 509773451}
+  buttReactionCenter: {fileID: 860666269}
+  controller: {fileID: 1543256713}
 --- !u!81 &500152610
 AudioListener:
   m_ObjectHideFlags: 0
@@ -730,6 +733,33 @@ Transform:
   - {fileID: 1991531070}
   m_Father: {fileID: 0}
   m_RootOrder: 3
+--- !u!1 &509773450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 509773451}
+  m_Layer: 0
+  m_Name: '*FaceReactionCenter'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &509773451
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 509773450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.52999997, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &577393863
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,6 +1213,33 @@ Prefab:
     - {fileID: 5043826, guid: 8d1cfcca8f8f14117816c6233e7426de, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 8d1cfcca8f8f14117816c6233e7426de, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &860666268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 860666269}
+  m_Layer: 0
+  m_Name: '*ButtReactionCenter'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &860666269
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 860666268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.24000001, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
 --- !u!1 &1007455265
 GameObject:
   m_ObjectHideFlags: 0

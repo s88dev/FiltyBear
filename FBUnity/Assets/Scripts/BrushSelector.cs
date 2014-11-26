@@ -48,6 +48,9 @@ public class BrushSelector : MonoBehaviour
 	private SpriteRenderer faceRend;
 	//
 	private bool _isSwitchingBrush = false;
+	//
+	private bool faceHasBeenTouched = false;
+	private bool buttHasBeenTouched = false;
 
 	#endregion
 
@@ -99,7 +102,7 @@ public class BrushSelector : MonoBehaviour
 
 		//
 		if (_isSwitchingBrush)
-			CancelInvoke ();
+			CancelInvoke ("ClearBrushIndicators");
 
 		Invoke ("ClearBrushIndicators", 0.5f);
 		_isSwitchingBrush = true;
@@ -141,6 +144,36 @@ public class BrushSelector : MonoBehaviour
 	}
 
 	#endregion
+
+	//
+	public void FaceTouched ()
+	{
+		if (faceHasBeenTouched)
+			return;
+
+		//
+		CancelInvoke ("Blink");
+		faceRend.sprite = faceSpriteCringe;
+		Invoke ("Unblink", 1.3f);
+
+		//
+		faceHasBeenTouched = true;
+	}
+
+	//
+	public void ButtTouched ()
+	{
+		if (buttHasBeenTouched)
+			return;
+
+		//
+		CancelInvoke ("Blink");
+		faceRend.sprite = faceSpriteO;
+		Invoke ("Unblink", 1.3f);
+
+		//
+		buttHasBeenTouched = true;
+	}
 
 
 	#region Update
@@ -196,6 +229,14 @@ public class BrushSelector : MonoBehaviour
 			case 4: s = faceSpriteO; break;
 		}
 		faceRend.sprite = s;
+	}
+
+
+	//
+	public void ResetTouchedBools ()
+	{
+		faceHasBeenTouched = false;
+		buttHasBeenTouched = false;
 	}
 
 

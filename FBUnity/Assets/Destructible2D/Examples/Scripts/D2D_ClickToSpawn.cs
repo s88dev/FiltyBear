@@ -13,6 +13,11 @@ public class D2D_ClickToSpawn : MonoBehaviour
 	public Transform mediumCursor;
 	public Transform largeCursor;
 	private int sizeBrushNum = 1;
+	//
+	public Transform faceReactionCenter;
+	public Transform buttReactionCenter;
+	//
+	public BrushSelector controller;
 
 
 	/*
@@ -59,6 +64,9 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			smallCursor.position = point;
 			mediumCursor.position = point;
 			largeCursor.position = point;
+			Vector2 pointXY = new Vector2 (point.x, point.y);
+			float distanceToFace = Vector2.Distance (pointXY, new Vector2 (faceReactionCenter.position.x, faceReactionCenter.position.y));
+			float distanceToButt = Vector2.Distance (pointXY, new Vector2 (buttReactionCenter.position.x, buttReactionCenter.position.y));
 
 			//
 			if (_previousPoint != Vector3.zero && sizeBrushNum < 3)
@@ -81,6 +89,12 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			//
 			prefabs [3].Explode (point);
 			_previousPoint = point;
+
+			//
+			if (distanceToFace <= 0.5f)
+				controller.FaceTouched ();
+			else if (distanceToButt <= 0.3f)
+				controller.ButtTouched ();
 		}
 
 		//
@@ -90,6 +104,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			smallCursor.GetComponent <Image> ().enabled = false;
 			mediumCursor.GetComponent <Image> ().enabled = false;
 			largeCursor.GetComponent <Image> ().enabled = false;
+			controller.ResetTouchedBools ();
 		}
 	}
 
