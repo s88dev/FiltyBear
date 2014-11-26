@@ -159,81 +159,6 @@ NavMeshSettings:
     cellSize: .166666657
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &16093810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 16093813}
-  - 212: {fileID: 16093812}
-  - 95: {fileID: 16093811}
-  m_Layer: 0
-  m_Name: MudSplash
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!95 &16093811
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16093810}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c9148959b62534293b519f77426cc9a1, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!212 &16093812
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16093810}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_LightmapIndex: 255
-  m_LightmapIndexDynamic: 255
-  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
-  m_LightmapTilingOffsetDynamic: {x: 1, y: 1, z: 0, w: 0}
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_AutoUVMaxDistance: .5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1607798919
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 420fde4df1acd4bb19e185a91e4ecdcb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
---- !u!4 &16093813
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 16093810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0700000003, y: 1.98000002, z: 0}
-  m_LocalScale: {x: .353782743, y: .353782743, z: .353782743}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
 --- !u!1 &123006763
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,7 +2746,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 76180b2d7d4134a9ba2d087359385afd, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: .5
+  m_Volume: .25
   m_Pitch: 1
   Loop: 1
   Mute: 0

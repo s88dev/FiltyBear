@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Splash
+  m_Name: MudSplashAnim
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -18,20 +18,20 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 420fde4df1acd4bb19e185a91e4ecdcb, type: 3}
-    - time: .0500000007
-      value: {fileID: 21300000, guid: b93507df632b04851829046ee8dbab0f, type: 3}
-    - time: .100000001
-      value: {fileID: 21300000, guid: 872a581ad23194bf1b988396170789ef, type: 3}
-    - time: .150000006
-      value: {fileID: 21300000, guid: ff841df1ec4524b08b7899a2a1aa54c6, type: 3}
+      value: {fileID: 21300000, guid: d688a4134e10143d4a28551d57463efe, type: 3}
+    - time: .0666666701
+      value: {fileID: 21300000, guid: 4579994320a094d93b2ab02582e7a16a, type: 3}
+    - time: .13333334
+      value: {fileID: 21300000, guid: a5ecee8e7224e43b8997c40e0f548b50, type: 3}
     - time: .200000003
-      value: {fileID: 21300000, guid: caf2d287ff24c4bf9abe18f4b6cb7d48, type: 3}
+      value: {fileID: 21300000, guid: 19427fb0cc80a4e0f928ef303104d91f, type: 3}
+    - time: .266666681
+      value: {fileID: 21300000, guid: 9b801a64caa8b410892ccd9f90eb6ab2, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 20
+  m_SampleRate: 15
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -45,15 +45,15 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 420fde4df1acd4bb19e185a91e4ecdcb, type: 3}
-    - {fileID: 21300000, guid: b93507df632b04851829046ee8dbab0f, type: 3}
-    - {fileID: 21300000, guid: 872a581ad23194bf1b988396170789ef, type: 3}
-    - {fileID: 21300000, guid: ff841df1ec4524b08b7899a2a1aa54c6, type: 3}
-    - {fileID: 21300000, guid: caf2d287ff24c4bf9abe18f4b6cb7d48, type: 3}
+    - {fileID: 21300000, guid: d688a4134e10143d4a28551d57463efe, type: 3}
+    - {fileID: 21300000, guid: 4579994320a094d93b2ab02582e7a16a, type: 3}
+    - {fileID: 21300000, guid: a5ecee8e7224e43b8997c40e0f548b50, type: 3}
+    - {fileID: 21300000, guid: 19427fb0cc80a4e0f928ef303104d91f, type: 3}
+    - {fileID: 21300000, guid: 9b801a64caa8b410892ccd9f90eb6ab2, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: .25
+    m_StopTime: .333333343
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
