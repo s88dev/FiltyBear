@@ -860,11 +860,11 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 3.63120556, g: 3.1030302, b: 0, a: 0}
+        second: {r: 3.63120556, g: 3.11246204, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
-        second: {r: .0234375, g: .6640625, b: 0, a: 0}
+        second: {r: .0224609375, g: .663085938, b: 0, a: 0}
 --- !u!1 &434533246
 GameObject:
   m_ObjectHideFlags: 0
@@ -1148,7 +1148,7 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 2.30630636, g: 1.51928782, b: 0, a: 0}
+        second: {r: 2.31151247, g: 1.52154529, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
@@ -2263,7 +2263,7 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.22448969, g: 4.30252123, b: 0, a: 0}
+        second: {r: 5.25128222, g: 4.3206749, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
@@ -2812,11 +2812,11 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.33333349, g: 4.41379309, b: 0, a: 0}
+        second: {r: 5.38947392, g: 4.43290043, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
-        second: {r: .697265625, g: .71875, b: 0, a: 0}
+        second: {r: .697265625, g: .717773438, b: 0, a: 0}
 --- !u!1 &1433435560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3133,12 +3133,12 @@ MonoBehaviour:
   faceSpriteCringe: {fileID: 21300000, guid: 3cc48ed87aaab446996705a7198524eb, type: 3}
   faceSpriteO: {fileID: 21300000, guid: da373b1fbc91846ac9255407a5eba622, type: 3}
   brushSizeIndicators:
-  - {fileID: 1674448635}
-  - {fileID: 1774587821}
-  - {fileID: 2072548427}
-  smallBrushActive: {fileID: 1527058854}
-  mediumBrushActive: {fileID: 577393865}
-  largeBrushActive: {fileID: 123006765}
+  - {fileID: 2028497693}
+  - {fileID: 134105262}
+  - {fileID: 1214593900}
+  smallBrushActive: {fileID: 1496957264}
+  mediumBrushActive: {fileID: 257312645}
+  largeBrushActive: {fileID: 1676385051}
 --- !u!4 &1543256714
 Transform:
   m_ObjectHideFlags: 0
@@ -3396,11 +3396,11 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.22448969, g: 2.6806283, b: 0, a: 0}
+        second: {r: 5.22448969, g: 2.68766403, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
-        second: {r: .306640625, g: .1015625, b: 0, a: 0}
+        second: {r: .305664062, g: .100585938, b: 0, a: 0}
 --- !u!1 &1637750025
 GameObject:
   m_ObjectHideFlags: 0
@@ -3419,7 +3419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1637750026
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3665,7 +3665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1682157594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3941,7 +3941,7 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.27835035, g: 2.62564111, b: 0, a: 0}
+        second: {r: 5.33333349, g: 2.63239074, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
