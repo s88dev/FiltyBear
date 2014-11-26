@@ -15,8 +15,9 @@ public class D2D_ExplosionStamp : MonoBehaviour
 	
 	public float AngleRandomness;
 	
-	public bool HasExploded;
-	
+	public bool HasExploded = false;
+
+	/*
 	protected virtual void Update()
 	{
 		if (HasExploded == false)
@@ -29,8 +30,16 @@ public class D2D_ExplosionStamp : MonoBehaviour
 	
 	public void Explode()
 	{
-		var angle = transform.rotation.eulerAngles.z + AngleOffset + Random.Range(-0.5f, 0.5f) * AngleRandomness;
+		//var angle = transform.rotation.eulerAngles.z + AngleOffset + Random.Range(-0.5f, 0.5f) * AngleRandomness;
 		
-		D2D_Destructible.StampAll(transform.position, Size, angle, StampTex, Hardness, Layers);
+		D2D_Destructible.StampAll(transform.position, Size, 1, StampTex, Hardness, Layers);
+	}*/
+
+	public void Explode (Vector3 pos)
+	{
+		HasExploded = true;
+		transform.position = pos;
+		D2D_Destructible.StampAll(transform.position, Size, 1, StampTex, Hardness, Layers);
+		HasExploded = false;
 	}
 }
