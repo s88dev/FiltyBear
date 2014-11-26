@@ -51,6 +51,9 @@ public class BrushSelector : MonoBehaviour
 	//
 	private bool faceHasBeenTouched = false;
 	private bool buttHasBeenTouched = false;
+	//
+	private BearOutfitController outfit = null;
+	private int _currentOutfit = 1;
 
 	#endregion
 
@@ -104,7 +107,7 @@ public class BrushSelector : MonoBehaviour
 		if (_isSwitchingBrush)
 			CancelInvoke ("ClearBrushIndicators");
 
-		Invoke ("ClearBrushIndicators", 0.5f);
+		Invoke ("ClearBrushIndicators", 1f);
 		_isSwitchingBrush = true;
 	}
 
@@ -129,6 +132,8 @@ public class BrushSelector : MonoBehaviour
 		GameObject b = (GameObject) Instantiate (bearPrefab, _prefabSpawnPosition, Quaternion.identity);
 		underwearRend = b.transform.GetChild (0).GetChild (1).gameObject.GetComponent <SpriteRenderer> ();
 		faceRend = b.transform.GetChild (1).GetChild (1).gameObject.GetComponent <SpriteRenderer> ();
+		outfit = b.GetComponent <BearOutfitController> ();
+		outfit.ChangeOutfit (_currentOutfit);
 
 		//
 		_isInitialBear = false;
@@ -140,7 +145,19 @@ public class BrushSelector : MonoBehaviour
 	//
 	public void ArrowPressed (bool isRight)
 	{
-
+		// Set the right outfit
+		if (isRight)
+		{
+			_currentOutfit ++;
+			if (_currentOutfit > 3) _currentOutfit = 1;
+		}
+		else
+		{
+			_currentOutfit --;
+			if (_currentOutfit < 1) _currentOutfit = 3;
+		}
+		//outfit.ChangeOutfit (_currentOutfit);
+		ResetButtonPressed ();
 	}
 
 	#endregion
@@ -154,7 +171,7 @@ public class BrushSelector : MonoBehaviour
 		//
 		CancelInvoke ("Blink");
 		faceRend.sprite = faceSpriteCringe;
-		Invoke ("Unblink", 1.3f);
+		//Invoke ("Unblink", 1.3f);
 
 		//
 		faceHasBeenTouched = true;
@@ -169,7 +186,7 @@ public class BrushSelector : MonoBehaviour
 		//
 		CancelInvoke ("Blink");
 		faceRend.sprite = faceSpriteO;
-		Invoke ("Unblink", 1.3f);
+		//Invoke ("Unblink", 1.3f);
 
 		//
 		buttHasBeenTouched = true;
@@ -185,10 +202,10 @@ public class BrushSelector : MonoBehaviour
 		{
 			//
 			for (int i = 0; i < brushSizeIndicators.Length; i ++)
-				brushSizeIndicators [i].color = Color.Lerp (brushSizeIndicators [i].color, Color.clear, Time.deltaTime * 10.0f);
-			smallBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
-			mediumBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
-			largeBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
+				brushSizeIndicators [i].color = Color.Lerp (brushSizeIndicators [i].color, Color.clear, Time.deltaTime * 3.0f);
+			smallBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 3.0f);
+			mediumBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 3.0f);
+			largeBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 3.0f);
 		}
 	}
 
@@ -240,6 +257,28 @@ public class BrushSelector : MonoBehaviour
 	}
 
 
+	public void FaceUntouched ()
+	{
+		if (faceHasBeenTouched)
+		{
+			faceHasBeenTouched = false;
+			faceRend.sprite = faceSpriteNormal;
+			Invoke ("Blink", Random.Range (blinkWaitTimeRange.x, blinkWaitTimeRange.y));
+		}
+	}
+
+
+	public void ButtUntouched ()
+	{
+		if (buttHasBeenTouched)
+		{
+			buttHasBeenTouched = false;
+			faceRend.sprite = faceSpriteNormal;
+			Invoke ("Blink", Random.Range (blinkWaitTimeRange.x, blinkWaitTimeRange.y));
+		}
+	}
+
+
 	//
 	void Blink ()
 	{
@@ -261,6 +300,7 @@ public class BrushSelector : MonoBehaviour
 	{
 		_prefabSpawnPosition = GameObject.Find ("Bear").transform.position;
 		faceRend = GameObject.Find ("Bear").transform.GetChild (1).GetChild (1).gameObject.GetComponent <SpriteRenderer> ();
+		outfit = GameObject.Find ("Bear").GetComponent <BearOutfitController> ();
 
 		Invoke ("Blink", Random.Range (blinkWaitTimeRange.x, blinkWaitTimeRange.y));
 	}

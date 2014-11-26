@@ -55,11 +55,22 @@ public class D2D_ClickToSpawn : MonoBehaviour
 				case 2: mediumCursor.GetComponent <Image> ().enabled = true; break;
 				case 3: largeCursor.GetComponent <Image> ().enabled = true; break;
 			}
-			rubSource.volume = 0.2f;
+			rubSource.volume = 0.4f;
 		}
 
 		if (Input.GetMouseButton (0))
 		{
+			//print (Input.mousePosition.x / Screen.width);
+			//print (Input.mousePosition.y / Screen.height);
+			// y = 0.13 - 0.2
+			// x = 0.2 - 0.8
+
+			// Mouse position coordinates n stuff
+			Vector3 mousePos = Input.mousePosition;
+			float xMouse = mousePos.x / Screen.width;
+			float yMouse = mousePos.y / Screen.height;
+
+			//
 			Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 			float distance = 0;
 			Vector3 point = ray.origin - ray.direction * distance;
@@ -68,7 +79,6 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			largeCursor.position = point;
 			Vector2 pointXY = new Vector2 (point.x, point.y);
 			float distanceToFace = Vector2.Distance (pointXY, new Vector2 (faceReactionCenter.position.x, faceReactionCenter.position.y));
-			float distanceToButt = Vector2.Distance (pointXY, new Vector2 (buttReactionCenter.position.x, buttReactionCenter.position.y));
 
 			//
 			if (_previousPoint != Vector3.zero && sizeBrushNum < 3)
@@ -84,7 +94,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 					//
 					prefabs [0].Explode (midpoint [0]);
 					//prefabs [1].Explode (midpoint [1]);
-					//prefabs [2].Explode (midpoint [2]);
+					prefabs [2].Explode (midpoint [2]);
 				}
 			}
 
@@ -93,10 +103,16 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			_previousPoint = point;
 
 			//
-			if (distanceToFace <= 0.5f)
+			if (distanceToFace <= 1.2f)
 				controller.FaceTouched ();
-			else if (distanceToButt <= 0.3f)
+			else
+				controller.FaceUntouched ();
+
+			//
+			if ((xMouse <= 0.8f && xMouse >= 0.2f) && (yMouse <= 0.23f && yMouse >= 0.13f))
 				controller.ButtTouched ();
+			else
+				controller.ButtUntouched ();
 		}
 
 		//
@@ -106,7 +122,9 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			smallCursor.GetComponent <Image> ().enabled = false;
 			mediumCursor.GetComponent <Image> ().enabled = false;
 			largeCursor.GetComponent <Image> ().enabled = false;
-			controller.ResetTouchedBools ();
+			//controller.ResetTouchedBools ();
+			controller.ButtUntouched ();
+			controller.FaceUntouched ();
 			rubSource.volume = 0.0f;
 		}
 	}
