@@ -34,8 +34,6 @@ public class D2D_ClickToSpawn : MonoBehaviour
 	{
 		for (int i = 0; i < prefabs.Length; i++)
 			prefabs [i].Size = new Vector2 (size, size);
-
-
 		sizeBrushNum = sizeNum;
 	}
 
@@ -63,7 +61,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			largeCursor.position = point;
 
 			//
-			if (_previousPoint != Vector3.zero)
+			if (_previousPoint != Vector3.zero && sizeBrushNum < 3)
 			{
 				//
 				if (Vector3.Distance (_previousPoint, point) >= 0.12f)

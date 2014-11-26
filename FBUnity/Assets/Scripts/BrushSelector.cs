@@ -133,6 +133,13 @@ public class BrushSelector : MonoBehaviour
 		ChangeUnderwear ();
 	}
 
+
+	//
+	public void ArrowPressed (bool isRight)
+	{
+
+	}
+
 	#endregion
 
 
