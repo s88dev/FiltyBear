@@ -7,6 +7,9 @@ public class AudioController : MonoBehaviour
 
 	// The sound effect source
 	public AudioSource seSource;
+	//
+	public AudioClip resetButtonclip;
+	public AudioClip switchOutfitsButtonclip;
 
 	#endregion
 
@@ -19,15 +22,13 @@ public class AudioController : MonoBehaviour
 	// Plays an audio clip
 	public void PlaySound (string name)
 	{
+		seSource.Stop ();
 		switch (name)
 		{
-		case "Reset":
-
-			break;
-
-		case "Brush":
-
-			break;
+			case "Reset": seSource.clip = resetButtonclip; break;
+			case "Switch": seSource.clip = switchOutfitsButtonclip; break;
+			case "Brush": seSource.clip = resetButtonclip; break;
 		}
+		seSource.Play ();
 	}
 }
