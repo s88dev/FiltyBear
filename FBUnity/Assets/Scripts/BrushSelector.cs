@@ -66,9 +66,19 @@ public class BrushSelector : MonoBehaviour
 	{
 		switch (_currentBrushSize)
 		{
-			case 1: _currentBrushSize = 2; spawner.ChangeBrushSize (0.5f, 2); break;
-			case 2: _currentBrushSize = 3; spawner.ChangeBrushSize (1f, 3); break;
-			case 3: _currentBrushSize = 1; spawner.ChangeBrushSize (0.25f, 1); break;
+			case 1: 
+				_currentBrushSize = 2; 
+				spawner.ChangeBrushSize (0.5f, 2); 
+			break;
+
+			case 2: 
+				_currentBrushSize = 3; 
+				spawner.ChangeBrushSize (1f, 3); 
+			break;
+			case 3: 
+				_currentBrushSize = 1; 
+				spawner.ChangeBrushSize (0.25f, 1); 
+			break;
 		}
 
 		smallBrushActive.enabled = false;
@@ -131,15 +141,15 @@ public class BrushSelector : MonoBehaviour
 	//
 	void Update ()
 	{
-		if (_isSwitchingBrush)
-			return;
-
-		//
-		for (int i = 0; i < brushSizeIndicators.Length; i ++)
-			brushSizeIndicators [i].color = Color.Lerp (brushSizeIndicators [i].color, Color.clear, Time.deltaTime * 10.0f);
-		smallBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
-		mediumBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
-		largeBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
+		if (!_isSwitchingBrush)
+		{
+			//
+			for (int i = 0; i < brushSizeIndicators.Length; i ++)
+				brushSizeIndicators [i].color = Color.Lerp (brushSizeIndicators [i].color, Color.clear, Time.deltaTime * 10.0f);
+			smallBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
+			mediumBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
+			largeBrushActive.color = Color.Lerp (smallBrushActive.color, Color.clear, Time.deltaTime * 10.0f);
+		}
 	}
 
 	#endregion
