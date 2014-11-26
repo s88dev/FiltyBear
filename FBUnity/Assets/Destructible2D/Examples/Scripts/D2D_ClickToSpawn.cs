@@ -18,6 +18,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 	public Transform buttReactionCenter;
 	//
 	public BrushSelector controller;
+	public AudioSource rubSource;
 
 
 	/*
@@ -54,6 +55,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 				case 2: mediumCursor.GetComponent <Image> ().enabled = true; break;
 				case 3: largeCursor.GetComponent <Image> ().enabled = true; break;
 			}
+			rubSource.volume = 0.2f;
 		}
 
 		if (Input.GetMouseButton (0))
@@ -105,6 +107,7 @@ public class D2D_ClickToSpawn : MonoBehaviour
 			mediumCursor.GetComponent <Image> ().enabled = false;
 			largeCursor.GetComponent <Image> ().enabled = false;
 			controller.ResetTouchedBools ();
+			rubSource.volume = 0.0f;
 		}
 	}
 
