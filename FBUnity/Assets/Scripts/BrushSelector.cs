@@ -20,6 +20,7 @@ public class BrushSelector : MonoBehaviour
 	public Color [] backgroundColors;
 	//
 	public Sprite [] underwearSprites;
+	public Sprite [] braSprites;
 	// The renderer for the baskground
 	public Renderer backgroundRend;
 	//
@@ -45,6 +46,7 @@ public class BrushSelector : MonoBehaviour
 	private int _currentBackgroundIndex = 0;
 	// The sprite renderers
 	private SpriteRenderer underwearRend;
+	private SpriteRenderer braRend;
 	private SpriteRenderer faceRend;
 	//
 	private bool _isSwitchingBrush = false;
@@ -131,6 +133,7 @@ public class BrushSelector : MonoBehaviour
 		// Instantiate the new bear and set the background color
 		GameObject b = (GameObject) Instantiate (bearPrefab, _prefabSpawnPosition, Quaternion.identity);
 		underwearRend = b.transform.GetChild (0).GetChild (1).gameObject.GetComponent <SpriteRenderer> ();
+		braRend = b.transform.GetChild (0).GetChild (2).gameObject.GetComponent <SpriteRenderer> ();
 		faceRend = b.transform.GetChild (1).GetChild (1).gameObject.GetComponent <SpriteRenderer> ();
 		outfit = b.GetComponent <BearOutfitController> ();
 		outfit.ChangeOutfit (_currentOutfit);
@@ -231,6 +234,21 @@ public class BrushSelector : MonoBehaviour
 	{
 		Sprite s = underwearSprites [Random.Range (0, underwearSprites.Length)];
 		underwearRend.sprite = s;
+
+		//
+		if (_currentOutfit == 1)
+		{
+			//
+			if (Random.Range (0, 10) > 5)
+			{
+				braRend.enabled = true;
+				braRend.sprite = braSprites [Random.Range (0, braSprites.Length)];
+			}
+			else
+				braRend.enabled = false;
+		}
+		else
+			braRend.enabled = false;
 	}
 
 

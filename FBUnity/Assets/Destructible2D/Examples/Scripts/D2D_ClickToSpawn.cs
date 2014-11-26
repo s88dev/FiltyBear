@@ -51,20 +51,15 @@ public class D2D_ClickToSpawn : MonoBehaviour
 		{
 			switch (sizeBrushNum)
 			{
-				case 1: smallCursor.GetComponent <Image> ().enabled = true; break;
-				case 2: mediumCursor.GetComponent <Image> ().enabled = true; break;
-				case 3: largeCursor.GetComponent <Image> ().enabled = true; break;
+				case 1: smallCursor.GetComponent <Image> ().enabled = true; rubSource.pitch = 1.3f; break;
+				case 2: mediumCursor.GetComponent <Image> ().enabled = true; rubSource.pitch = 1f; break;
+				case 3: largeCursor.GetComponent <Image> ().enabled = true; rubSource.pitch = 0.8f; break;
 			}
-			rubSource.volume = 0.4f;
+			rubSource.volume = 0.35f;
 		}
 
 		if (Input.GetMouseButton (0))
 		{
-			//print (Input.mousePosition.x / Screen.width);
-			//print (Input.mousePosition.y / Screen.height);
-			// y = 0.13 - 0.2
-			// x = 0.2 - 0.8
-
 			// Mouse position coordinates n stuff
 			Vector3 mousePos = Input.mousePosition;
 			float xMouse = mousePos.x / Screen.width;
@@ -129,7 +124,8 @@ public class D2D_ClickToSpawn : MonoBehaviour
 		}
 	}
 
-	void Start ()
+
+	public void SpawnPrefabs ()
 	{
 		// Create the prefab pool
 		prefabs = new D2D_ExplosionStamp [prefabPoolSize];
