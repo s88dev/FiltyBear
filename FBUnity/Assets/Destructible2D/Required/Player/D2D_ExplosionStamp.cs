@@ -16,6 +16,7 @@ public class D2D_ExplosionStamp : MonoBehaviour
 	public float AngleRandomness;
 	
 	public bool HasExploded = false;
+	Transform trans;
 
 	/*
 	protected virtual void Update()
@@ -39,7 +40,12 @@ public class D2D_ExplosionStamp : MonoBehaviour
 	{
 		HasExploded = true;
 		transform.position = pos;
-		D2D_Destructible.StampAll(transform.position, Size, 1, StampTex, Hardness, Layers);
+		D2D_Destructible.StampAll (trans.position, Size, 1, StampTex, Hardness, Layers);
 		HasExploded = false;
+	}
+
+	void Start ()
+	{
+		trans = transform;
 	}
 }

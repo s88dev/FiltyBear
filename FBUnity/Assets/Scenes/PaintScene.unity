@@ -550,11 +550,11 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 3.63120556, g: 3.11246204, b: 0, a: 0}
+        second: {r: 3.63120556, g: 3.1030302, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
-        second: {r: .0224609375, g: .663085938, b: 0, a: 0}
+        second: {r: .0234375, g: .6640625, b: 0, a: 0}
 --- !u!21 &455300790
 Material:
   serializedVersion: 4
@@ -723,7 +723,7 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 2.31151247, g: 1.52154529, b: 0, a: 0}
+        second: {r: 2.30630636, g: 1.51928782, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
@@ -1716,7 +1716,7 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.25128222, g: 4.3206749, b: 0, a: 0}
+        second: {r: 5.22448969, g: 4.30252123, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
@@ -1848,6 +1848,67 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1348506582}
+--- !u!1 &1369567704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1369567705}
+  - 222: {fileID: 1369567707}
+  - 114: {fileID: 1369567706}
+  m_Layer: 5
+  m_Name: FBLogo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1369567705
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369567704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1637750026}
+  m_RootOrder: 13
+  m_AnchorMin: {x: .202608317, y: .470430613}
+  m_AnchorMax: {x: .774876893, y: .697000027}
+  m_AnchoredPosition: {x: -.199831009, y: .50402832}
+  m_SizeDelta: {x: 1, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1369567706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369567704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Sprite: {fileID: 21300000, guid: 1204044b9bcf045ae960cd57d907ab52, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1369567707
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1369567704}
 --- !u!1 &1375267324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,11 +2138,11 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.38947392, g: 4.43290043, b: 0, a: 0}
+        second: {r: 5.33333349, g: 4.41379309, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
-        second: {r: .697265625, g: .717773438, b: 0, a: 0}
+        second: {r: .697265625, g: .71875, b: 0, a: 0}
 --- !u!1 &1433435560
 GameObject:
   m_ObjectHideFlags: 0
@@ -2539,11 +2600,11 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.22448969, g: 2.68766403, b: 0, a: 0}
+        second: {r: 5.22448969, g: 2.6806283, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
-        second: {r: .305664062, g: .100585938, b: 0, a: 0}
+        second: {r: .306640625, g: .1015625, b: 0, a: 0}
 --- !u!1 &1637750025
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,6 +2647,7 @@ RectTransform:
   - {fileID: 1804279104}
   - {fileID: 1552999711}
   - {fileID: 1375267325}
+  - {fileID: 1369567705}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
@@ -2665,6 +2727,7 @@ MonoBehaviour:
   splashScreen: {fileID: 1804279105}
   s88Logo: {fileID: 1552999712}
   kidtvLogo: {fileID: 1375267326}
+  fbLogo: {fileID: 1369567706}
   introstage: 1
 --- !u!1 &1674448633
 GameObject:
@@ -2895,7 +2958,7 @@ Material:
       data:
         first:
           name: _AlphaScale
-        second: {r: 5.33333349, g: 2.63239074, b: 0, a: 0}
+        second: {r: 5.27835035, g: 2.62564111, b: 0, a: 0}
       data:
         first:
           name: _AlphaOffset
@@ -2990,10 +3053,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1637750026}
   m_RootOrder: 10
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: .00378417969, y: .00793460011}
-  m_SizeDelta: {x: -355.820007, y: -707.609985}
+  m_AnchorMin: {x: .392585009, y: .440000027}
+  m_AnchorMax: {x: .60737747, y: .560000002}
+  m_AnchoredPosition: {x: 1, y: -1}
+  m_SizeDelta: {x: 5, y: 4}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1804279105
 MonoBehaviour:
